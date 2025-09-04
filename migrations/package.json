@@ -1,0 +1,11 @@
+{
+  "name": "migrations",
+  "version": "1.0.0",
+  "license": "MIT",
+  "devDependencies": {
+    "prisma": "^6.15.0"
+  },
+  "dependencies": {
+    "@prisma/client": "^6.15.0"
+  }
+}
