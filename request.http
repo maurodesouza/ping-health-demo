@@ -1,0 +1,5 @@
+POST http://localhost:7070/ping HTTP/1.1
+
+###
+
+GET http://localhost:7070/health HTTP/1.1
