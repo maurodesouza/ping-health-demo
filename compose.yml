@@ -30,3 +30,15 @@ services:
           - "7070:7070"
         volumes:
           - ./node-app:/app
+
+    go-app:
+        image: cosmtrek/air:v1.62.0
+        working_dir: /app
+        env_file:
+            - .env.development
+        depends_on:
+            - database
+        ports:
+        - 8080:8080
+        volumes:
+        - ./go-app/:/app/

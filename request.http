@@ -3,3 +3,11 @@ POST http://localhost:7070/ping HTTP/1.1
 ###
 
 GET http://localhost:7070/health HTTP/1.1
+
+###
+
+POST http://localhost:8080/ping HTTP/1.1
+
+###
+
+GET http://localhost:8080/health HTTP/1.1
