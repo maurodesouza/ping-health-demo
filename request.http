@@ -1,13 +1,22 @@
+### ===== NODE =====
 POST http://localhost:7070/ping HTTP/1.1
 
 ###
 
 GET http://localhost:7070/health HTTP/1.1
 
-###
+### ===== GOLANG =====
 
 POST http://localhost:8080/ping HTTP/1.1
 
 ###
 
 GET http://localhost:8080/health HTTP/1.1
+
+### ===== RUST =====
+
+POST http://localhost:9090/ping HTTP/1.1
+
+###
+
+GET http://localhost:9090/health HTTP/1.1

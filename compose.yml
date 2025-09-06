@@ -42,3 +42,14 @@ services:
         - 8080:8080
         volumes:
         - ./go-app/:/app/
+
+    rust-app:
+        build: ./rust-app
+        env_file:
+            - .env.development
+        depends_on:
+            - database
+        ports:
+          - "9090:9090"
+        volumes:
+          - ./rust-app:/app
