@@ -35,7 +35,6 @@ app.post("/ping", async (_, reply) => {
         .into("pings")
         .returning("*")
 
-
     return record;
 })
 
