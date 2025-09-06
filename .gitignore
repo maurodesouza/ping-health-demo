@@ -1,7 +1,16 @@
+# Dependencies
+node_modules
+
+# Environments
+.env.development
+
+# Build
+build
+
+# Tmp
 tmp
 
+# Debug
 target
 **/*.rs.bk
-
-node_modules
-.env.development
+**/*.log
