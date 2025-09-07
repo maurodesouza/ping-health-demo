@@ -1,0 +1,31 @@
+# ===== Build Stage =====
+ARG NODE_VERSION=22.19.0
+
+FROM node:${NODE_VERSION}-alpine as builder
+
+WORKDIR /app
+
+COPY package.json ./
+
+RUN npm install
+
+COPY . .
+
+RUN yarn build
+
+# ===== Production Stage =====
+
+FROM node:${NODE_VERSION}-alpine
+
+WORKDIR /app
+
+COPY --from=builder /app/build ./
+
+COPY package.json yarn.lock ./
+RUN yarn install --production
+
+USER node
+
+CMD ["node", "server.js"]
+
+EXPOSE 7070
