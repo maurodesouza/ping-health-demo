@@ -7,7 +7,7 @@
   <img width="15" />
   <img src="https://skillicons.dev/icons?i=rust" height="50" alt="rust logo"  />
   <img width="15" />
-  <img src="https://coolify.io/docs/coolify-logo-transparent.png" height="50" alt="coolify Logo" />
+  <img src="https://coolify.io/docs/brand/logo.webp" height="50" alt="coolify Logo" />
   <img width="15" />
   <img src="https://skillicons.dev/icons?i=docker" height="50" alt="docker logo"  />
 </div>
